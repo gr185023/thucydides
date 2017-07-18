@@ -303,11 +303,17 @@ summary img {
         align-items: center;
 }
 
-.slide1-bg {
+.parallax-bg {
     background: #737180 no-repeat center center;
     overflow: hidden;
     background-size: cover;
-    background-image: url("../img/home-bw.jpg");
+    height: 100%;
+    width: 130%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../img/corals.JPG");
+    z-index: 2;
 }
 
 .slide2-bg {

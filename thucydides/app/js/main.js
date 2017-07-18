@@ -15,7 +15,6 @@ Primary use: App & Mobile Website
 ( function( $ ) {
 
     $( '.swipebox' ).swipebox();
-
 } )( jQuery );
 
 // This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026
@@ -45,18 +44,29 @@ $('#open-left').sideNav({ // Trigger id
     closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
 });
 
-// Sliders
-var swiper = new Swiper('.swiper-slider', { // Default
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-    autoplay: true,
-    loop: true,
-    paginationType: 'progress',
-    autoplayDisableOnInteraction: true,
-    parallax: true
-});
+// // Sliders
+// var swiper = new Swiper('.swiper-slider', { // Default
+//     pagination: '.swiper-pagination',
+//     paginationClickable: true,
+//     nextButton: '.swiper-button-next',
+//     prevButton: '.swiper-button-prev',
+//     autoplay: false,
+//     loop: true,
+//     paginationType: 'progress',
+//     autoplayDisableOnInteraction: true,
+//     parallax: false
+// });
+
+var swiper = new Swiper('.swiper-container', {
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        parallax: true,
+        speed: 600,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: false
+    });
 
 // init swiper layout
 window.onload = function () {
