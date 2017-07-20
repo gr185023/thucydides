@@ -156,6 +156,7 @@ var swiper = new Swiper('.swiper-slider', { // Default
     loop: true,
     paginationType: 'progress',
     speed: 3000,
+    parallax: true,
 });
 
 
