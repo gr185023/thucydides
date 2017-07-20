@@ -19,6 +19,9 @@
     <!-- Icons -->
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="all" rel="stylesheet" type="text/css">
 
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
     <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
     <!--
     <link rel="canonical" href="http://www.example.com/" >
@@ -57,7 +60,7 @@
       <!-- end of toolbar -->
 
       
-      <div class="swiper-container swiper-init swiper-container-horizontal" data-effect="slide" data-parallax="true">
+      <div class="swiper-container swiper-slider" >
         <div class="swiper-wrapper"> <!--cover-summary" -->
           <div class="swiper-slide slide1-bg"> <!--home-cover"-->
             <div class="summary">
@@ -67,8 +70,14 @@
           </div>
           <div class="swiper-slide slide2-bg"> <!--slide2-cover"-->
             <div class="summary" >
-              <h1 data-swiper-parallax="-100">This is next tip</h1>
-              <h2 data-swiper-parallax="-200">And I don't know what to say...</h2>
+              <h1 data-swiper-parallax="-100" data-swiper-parallax-duration="600">This is next tip</h1>
+              <h2 data-swiper-parallax="-200" data-swiper-parallax-duration="600">And I don't know what to say...</h2>
+            </div>
+          </div>
+          <div class="swiper-slide slide2-bg"> <!--slide2-cover"-->
+            <div class="summary" >
+              <h1 data-swiper-parallax="-100" data-swiper-parallax-duration="600">This is 3rd tip</h1>
+              <h2 data-swiper-parallax="-200" data-swiper-parallax-duration="600">And I don't know what to say (third)...</h2>
             </div>
           </div>
         </div>
@@ -233,7 +242,8 @@
 
 
   	<!-- Scripts -->
-  	<script src="js/vendor/jquery-2.1.0.min.js"></script>
+    <script src="js/vendor/jquery-2.1.0.min.js"></script>
+    <script src="js/helper.js"></script>
     <script src="js/vendor/HeadsUp.js"></script>
     <script src="js/vendor/jquery.smoothState.js"></script>
     <script src="js/vendor/chart.min.js"></script>
@@ -244,14 +254,6 @@
     <script src="js/vendor/materialize.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-
-    <script>        
-  var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        direction: 'horizontal'
-    });
-    </script>
 
   </body>
 </html>

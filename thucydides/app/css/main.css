@@ -483,16 +483,16 @@ summary img {
   background: #01acc6;
   opacity: 0.9;
 }
-.swiper-pagination-bullet {
+/*.swiper-pagination-bullet {
   width: 15px;
   height: 3px;
   border-radius: 0;
 }
 .swiper-pagination-bullet-active {
   background: #01acc6;
-}
+}*/
 
-.swiper-container-rtl .swiper-button-prev {
+/*.swiper-container-rtl .swiper-button-prev {
   background-image: none;
   right: 20px;
   width: auto;
@@ -503,12 +503,12 @@ summary img {
   left: 20px;
   width: auto;
   height: auto;
-}
-.swiper-container-horizontal>.swiper-pagination-bullets, 
+}*/
+/*.swiper-container-horizontal>.swiper-pagination-bullets, 
 .swiper-pagination-custom, 
 .swiper-pagination-fraction {
     bottom: 20px;
-}
+}*/
 
 /*  9. Elements
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
